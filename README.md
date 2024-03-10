@@ -1,25 +1,26 @@
-# OVOSSkill
-
-Introductory Skill so that Skill Authors can see how an OVOS Skill is put together
+# OVOS-SKILL-SMSM (OVOSSkill)
 
 ## About
 
-Information about your skill
+OVOS will text one phone number a predifined text when asked. 
 
 ## Examples
 
-- "Hello world"
-- "How are you?"
-- "Thank you"
+- "Text Emergency services"
+- "text emergency"
+- "text 9-1-1"
 
 ## Credits
 
-authorName (@githubUsername)
+Michelle Tran (@mushie4282)
 
 ## Category
 
 TODO:
+1. register emergency intents
+2. trigger the skill via OVOS commands
+3. trigger the skill via verbal commands
 
 ## Tags
 
-ovos skill
+ovos skill sms texting
