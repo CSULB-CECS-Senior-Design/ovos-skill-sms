@@ -3,11 +3,11 @@
     "url": "https://github.com/SeniorDesign-RC-LB/ovos-skill-sms",
     "summary": "",
     "short_description": null,
-    "description": "Information about your skill",
+    "description": "OVOS will text one phone number a predifined text when asked.",
     "examples": [
-        "Hello world",
-        "How are you?",
-        "Thank you"
+        "Text Emergency services",
+        "text emergency",
+        "text 9-1-1"
     ],
     "desktopFile": false,
     "warning": "",
@@ -35,17 +35,20 @@
     "icon": "",
     "category": "TODO:",
     "categories": [
-        "TODO:"
+        "TODO:",
+        "1. register emergency intents",
+        "2. trigger the skill via OVOS commands",
+        "3. trigger the skill via verbal commands"
     ],
     "tags": [
-        "ovos skill"
+        "ovos skill sms texting"
     ],
     "credits": [
-        "authorName",
-        "(@githubUsername)"
+        "Michelle",
+        "Tran",
+        "(@mushie4282)"
     ],
     "skillname": "ovos-skill-sms",
     "authorname": "SeniorDesign-RC-LB",
-    "foldername": null,
-    "ovosskill": "Introductory Skill so that Skill Authors can see how an OVOS Skill is put together"
+    "foldername": null
 }
