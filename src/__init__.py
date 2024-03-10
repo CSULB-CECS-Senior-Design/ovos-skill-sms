@@ -12,7 +12,7 @@ DEFAULT_SETTINGS = {
     "setting3": "test"
 }
 
-class GetHelpTexting(OVOSSkill):
+class TextingSkill(OVOSSkill):
     def __init__(self, *args, bus=None, **kwargs):
         super().__init__(*args, bus=bus, **kwargs)
         self.learning = True
