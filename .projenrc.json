@@ -1,4 +1,7 @@
 {
   "type": "@mikejgray/ovos-skill-projen.OVOSSkillProject",
-  "name": "ovos-skill-sms"
+  "name": "ovos-skill-sms",
+  "author": "Mushie",
+  "repositoryUrl": "https://github.com/SeniorDesign-RC-LB/ovos-skill-sms",
+  "skillClass": "TextingSkill"
 }
