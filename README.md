@@ -1,4 +1,4 @@
-# OVOS-SKILL-SMSM (OVOSSkill)
+# OVOS-SKILL-SMS (OVOSSkill)
 
 ## About
 OVOS will text one phone number a predifined text when asked. 
