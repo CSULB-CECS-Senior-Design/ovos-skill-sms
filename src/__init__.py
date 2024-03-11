@@ -3,6 +3,10 @@ from ovos_utils.process_utils import RuntimeRequirements
 from ovos_workshop.intents import IntentBuilder
 from ovos_workshop.decorators import intent_handler
 from ovos_workshop.skills import OVOSSkill
+
+# Add the home directory to access SMS.py
+import sys
+sys.path.insert(1, '/home/ovos')
 from SMS import SIM7600X
 
 # Optional - if you want to populate settings.json with default values, do so here
@@ -50,10 +54,12 @@ class TextingSkill(OVOSSkill):
         It is triggered using a list of sample phrases."""
         self.speak_dialog("text.response")
         phone = SIM7600X() # create SMS instance
-        if phone.send_short_message("Send help to CSULB! Location:CECS 416"):
-            self.speak_dialog("error.response") # in case the HAT is not responsive
-        else:
+        try:
+	    phone.send_short_message("Send help to CSULB! Location:CECS 416"):
             self.speak_dialog("text.complete")
+        except:
+	# in case the HAT is not responsive
+	    self.speak_dialog("error.response")
         self.speak("This is from S M S skill")
 
     def stop(self):
