@@ -3,14 +3,8 @@
     "url": "https://github.com/SeniorDesign-RC-LB/ovos-skill-sms",
     "summary": "",
     "short_description": null,
-    "description": "OVOS will text one phone number a predifined text when asked.",
-    "examples": [
-        "text 9 1 1",
-        "text for help",
-        "contact help",
-        "contact emergency responders",
-        "get help fast"
-    ],
+    "description": "OVOS will text one phone number a predifined text when asked. ### Demo https://youtu.be/Me-3pXEmSA8",
+    "examples": [],
     "desktopFile": false,
     "warning": "",
     "systemDeps": false,
@@ -39,8 +33,8 @@
     "categories": [
         "TODO:",
         "- [x] register emergency intents",
-        "- [ ] trigger the skill via OVOS commands",
-        "- [ ] trigger the skill via verbal commands "
+        "- [x] trigger the skill via OVOS commands",
+        "- [x] trigger the skill via verbal commands"
     ],
     "tags": [
         "ovos skill sms texting"
@@ -52,5 +46,6 @@
     ],
     "skillname": "ovos-skill-sms",
     "authorname": "SeniorDesign-RC-LB",
-    "foldername": null
+    "foldername": null,
+    "examples phrases": "- \"text 9 1 1\" - \"text for help\" - \"contact help\" - \"contact emergency responders\" - \"get help fast\""
 }
