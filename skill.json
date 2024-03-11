@@ -38,9 +38,9 @@
     "category": "TODO:",
     "categories": [
         "TODO:",
-        "1. register emergency intents",
-        "2. trigger the skill via OVOS commands",
-        "3. trigger the skill via verbal commands"
+        "- [x] register emergency intents",
+        "- [ ] trigger the skill via OVOS commands",
+        "- [ ] trigger the skill via verbal commands "
     ],
     "tags": [
         "ovos skill sms texting"
