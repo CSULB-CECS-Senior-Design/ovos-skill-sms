@@ -2,8 +2,8 @@ from ovos_utils import classproperty
 from ovos_utils.process_utils import RuntimeRequirements
 from ovos_workshop.intents import IntentBuilder
 from ovos_workshop.decorators import intent_handler
-# from ovos_workshop.intents import IntentHandler # Uncomment to use Adapt intents
 from ovos_workshop.skills import OVOSSkill
+from SMS import SIM7600X
 
 # Optional - if you want to populate settings.json with default values, do so here
 DEFAULT_SETTINGS = {
@@ -49,6 +49,11 @@ class TextingSkill(OVOSSkill):
         """This is a Padatious intent handler.
         It is triggered using a list of sample phrases."""
         self.speak_dialog("text.response")
+        phone = SIM7600X() # create SMS instance
+        if phone.send_short_message("Send help to CSULB! Location:CECS 416"):
+            self.speak_dialog("error.response") # in case the HAT is not responsive
+        else:
+            self.speak_dialog("text.complete")
         self.speak("This is from S M S skill")
 
     def stop(self):
