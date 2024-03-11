@@ -18,9 +18,9 @@ Michelle Tran (@mushie4282)
 ## Category
 
 TODO:
-1. register emergency intents
-2. trigger the skill via OVOS commands
-3. trigger the skill via verbal commands
+- [x] register emergency intents
+- [ ] trigger the skill via OVOS commands
+- [ ] trigger the skill via verbal commands 
 
 ## Tags
 
