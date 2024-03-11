@@ -5,10 +5,11 @@
 OVOS will text one phone number a predifined text when asked. 
 
 ## Examples
-
-- "Text Emergency services"
-- "text emergency"
-- "text 9-1-1"
+- "text 9 1 1"
+- "text for help"
+- "contact help"
+- "contact emergency responders"
+- "get help fast"
 
 ## Credits
 
