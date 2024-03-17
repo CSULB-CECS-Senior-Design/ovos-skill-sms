@@ -49,7 +49,7 @@ class TextingSkill(OVOSSkill):
         return self.settings.get("my_setting", "default_value")
 
     @intent_handler("Texting.intent")
-    def handle_how_are_you_intent(self, message):
+    def handle_text_intent(self, message):
         """This is a Padatious intent handler.
         It is triggered using a list of sample phrases."""
         self.speak_dialog("text.response")
