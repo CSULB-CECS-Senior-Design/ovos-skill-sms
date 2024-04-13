@@ -15,7 +15,8 @@ https://youtu.be/Me-3pXEmSA8
 - "get help fast"
 
 ## Credits
-Michelle Tran (@mushie4282)
+- Michelle Tran (@mushie4282)
+- Mike Gray's skill generator - https://github.com/mikejgray/ovos-skill-projen
 
 ## Verification Process:
 - [x] register emergency intents
