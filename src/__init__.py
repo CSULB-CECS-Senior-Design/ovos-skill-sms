@@ -60,7 +60,6 @@ class TextingSkill(OVOSSkill):
         except:
 		# in case the HAT is not responsive
 		self.speak_dialog("error.response")
-        self.speak("This is from S M S skill")
 
     def stop(self):
         """Optional action to take when "stop" is requested by the user.
