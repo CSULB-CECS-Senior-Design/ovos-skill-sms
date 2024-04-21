@@ -55,11 +55,11 @@ class TextingSkill(OVOSSkill):
         self.speak_dialog("text.response")
         phone = SIM7600X() # create SMS instance
         try:
-		phone.send_short_message("Send help to CSULB! Location:CECS 416")
-		self.speak_dialog("text.complete")
+            phone.send_short_message("Send help to CSULB! Location:CECS 416")
+            self.speak_dialog("text.complete")
         except:
-		# in case the HAT is not responsive
-		self.speak_dialog("error.response")
+		    # in case the HAT is not responsive
+            self.speak_dialog("error.response")
 
     def stop(self):
         """Optional action to take when "stop" is requested by the user.
