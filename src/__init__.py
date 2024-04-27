@@ -51,11 +51,23 @@ class TextingSkill(OVOSSkill):
     @intent_handler("Texting.intent")
     def handle_text_intent(self, message):
         """This is a Padatious intent handler.
-        It is triggered using a list of sample phrases."""
+        It is triggered using a list of sample phrases. (Texting.intent)"""
         self.speak_dialog("text.response")
         phone = SIM7600X() # create SMS instance
         try:
             phone.send_short_message("Send help to CSULB! Location:CECS 416")
+            self.speak_dialog("text.complete")
+        except:
+		    # in case the HAT is not responsive
+            self.speak_dialog("error.response")
+
+    @intent_handler(IntentBuilder("TextIntent").require("SmsKey"))
+    def handle_text_adapt_intent(self, message):
+        # Triggered by Keyword (SmsKey.voc)
+        self.speak_dialog("text.response")
+        phone = SIM7600X() # create SMS instance
+        try:
+            phone.send_short_message("Send help to 1250 N Bellflower Blvd, Long Beach, CA 90840")
             self.speak_dialog("text.complete")
         except:
 		    # in case the HAT is not responsive
